@@ -2,8 +2,9 @@ package eyecon.db.api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import eyecon.db.api.dao.SrcpictypeRepository;
+
 import eyecon.db.api.entities.Srcpictype;
+import eyecon.db.api.models.SrcpictypeRepository;
 
 @Service
 public class SrcPicTypeService implements ISrcPicTypeService {

@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import eyecon.db.api.dao.UsersRepository;
+
 import eyecon.db.api.entities.Users;
+import eyecon.db.api.models.UsersRepository;
 
 @Service
 public class UserService implements IUserService {

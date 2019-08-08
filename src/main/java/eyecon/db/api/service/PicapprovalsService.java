@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import eyecon.db.api.dao.PicapprovalsRepository;
 import eyecon.db.api.entities.Picapprovals;
+import eyecon.db.api.models.PicapprovalsRepository;
 
 @Service
 public class PicapprovalsService implements IPicapprovalsService {

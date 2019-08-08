@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import eyecon.db.api.dao.NamesRepository;
+
 import eyecon.db.api.entities.Names;
+import eyecon.db.api.models.NamesRepository;
 
 @Service
 public class NamesService implements INamesService {

@@ -1,4 +1,4 @@
-package eyecon.db.api.dao;
+package eyecon.db.api.models;
 
 import java.util.List;
 import org.springframework.data.repository.CrudRepository;
