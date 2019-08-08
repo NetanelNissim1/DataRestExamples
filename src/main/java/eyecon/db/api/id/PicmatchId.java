@@ -4,10 +4,6 @@ import java.io.Serializable;
 
 public class PicmatchId implements Serializable {
 
-	/**
-	 * 
-	 */
-
 	private static final long serialVersionUID = 1L;
 
 	private String cli;
@@ -18,7 +14,6 @@ public class PicmatchId implements Serializable {
 	}
 
 	public PicmatchId(String cli, int stype, String sid) {
-
 		this.cli = cli;
 		this.stype = stype;
 		this.sid = sid;
@@ -77,7 +72,4 @@ public class PicmatchId implements Serializable {
 		// TODO Auto-generated method stub
 		return super.equals(obj);
 	}
-	
-	
-
 }

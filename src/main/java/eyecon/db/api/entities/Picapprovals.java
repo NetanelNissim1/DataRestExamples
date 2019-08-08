@@ -7,12 +7,16 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.Index;
 import javax.persistence.Table;
+
+import eyecon.db.api.id.PicapprovalsId;
 
 @Entity
 @Table(name = "picapprovals", indexes = {
 		@Index(name = "picapprovalsPrimary", columnList = "cli,contact,tag", unique = true) })
+@IdClass(PicapprovalsId.class)
 public class Picapprovals implements Serializable {
 
 	/**
