@@ -4,11 +4,15 @@ package eyecon.db.api.entities;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Index;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -64,6 +68,9 @@ public class Users implements Serializable {
 	@Column(name = "public_id", length = 50)
 	private String publicId;
 
+	@OneToMany(mappedBy = "user")
+	private List<Picapprovals> picapprovals;
+	
 	@Transient
 	private boolean is_same_device_name;
 	@Transient

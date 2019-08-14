@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Index;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import eyecon.db.api.id.PicapprovalsId;
@@ -37,6 +39,11 @@ public class Picapprovals implements Serializable {
 	@Column(nullable = false)
 	private Timestamp timestamp;
 
+	@ManyToOne
+	@JoinColumn(name = "USER_ID")
+	private Users user;
+	
+	
 	/** Default constructor. */
 	public Picapprovals() {
 		super();

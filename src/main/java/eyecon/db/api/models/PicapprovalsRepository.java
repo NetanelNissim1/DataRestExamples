@@ -11,4 +11,6 @@ public interface PicapprovalsRepository extends CrudRepository<Picapprovals, Str
 	List<Picapprovals> findByCliAndContact(String cli, String contact);
 
 	Picapprovals findByCliAndContactAndTag(String cli, String contact, String tag);
+	
+	
 }
